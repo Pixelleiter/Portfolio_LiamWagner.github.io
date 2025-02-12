@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_Portfolio.css">
+    <title>Liam Wagner Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero" id="start">
+        <div class="hero-text">
+            <h1>Hallo, ich bin Liam Wagner,</h1>
+            <p>Multimedia-Schüler der HTL1, Linz.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="Bilder/Hoch.png" alt="About Liam">
+        </div>
+
+        <div class="about-content">
+            <div class="bio">
+                <h2>Über mich</h2>
+                <p>Ich bin Schüler der HTL1 Mediendesign - voller Ideen, Motivation und Lust zu lernen. Ich möchte
+                    wachsen, neue Fähigkeiten entdecken und mit frischem Wind in Projekten durchstarten. Teamarbeit und
+                    Kreativität stehen bei mir an erster Stelle - und ich freue mich darauf, von den Besten zu lernen!
+                </p>
+            </div>
+            <div class="approach">
+                <h2>Warum bei Ihnen?</h2>
+                <p>Ich habe mich intensiv mit Ihrer Agentur und Philosophie beschäftigt und finde es spannend, wie Sie
+                    mit Familienunternehmen auf Augenhöhe arbeiten und nachhaltige Lösungen entwickeln. Besonders Ihr
+                    ganzheitlicher Ansatz zur Markenentwicklung reizt mich - vom ersten Konzept bis zur Übergabe. Als
+                    Praktikant bringe ich frische Ideen, Motivation und Lernbereitschaft mit, die Ihr Team bereichern
+                    können. Ich freue mich darauf, von Ihren Erfahrungen zu profitieren und gleichzeitig meine
+                    Kreativität in echte Projekte einzubringen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-gallery-container">
+            <button class="arrow left">&#10094;</button>
+            <div class="project-gallery">
+                <img src="Bilder/Projekte/Figma kleiner.png"
+                    alt="Für den Friseur Sandler erstellte ich eine Website. Nach einer Analyse und einem Gespräch zur Klärung der Anforderungen folgte die Planung von Stuktur und Design. Zum Abschluss setzte ich die Website in Figma um, die noch in der internen Testphase ist."
+                    class="project-img first-project">
+                <img src="Bilder/Projekte/Face.switch.png"
+                    alt="In diesem Faceswap-Project ersetzte ich das Gesicht einer Filmfigur durch mein eigenes. Dabei arbeitete ich mit Licht- und Farbkorrekturen, um einen realistischen Übergang zu schaffen und die Texturen sowie Beleuchtung anzupassen."
+                    class="project-img">
+                <img src="Bilder/Projekte/Sag_Nichts.png"
+                    alt="In dem Project SAG NICHTS erstellte ich ein Video, in dem die Darsteller sich ohne Worte verständigen mussten. Durch Mimik, Gestik und Körpersprache wurde die Geschichte erzählt, wobei der Fokus auf nonverbaler Komunikation lag."
+                    class="project-img">
+                <img src="Bilder/Projekte/Generationentausch - vertauschte Rollen - Liam Wagner Kopie.jpg"
+                    alt="ROLLENTAUSCH - In diesem Fotoprojekt tauschte ich die gewohnten Rollen von einem kleinen Mädchen und einer Oma. Das Mädchen, mit Brille, strickte, während die Oma mit Puppen spielte. Die Idee war, die typischen Aktivitäten der beiden humorvoll umzudrehen."
+                    class="project-img">
+                <img src="Bilder/Projekte/Karte.png" alt="Weihnachtskarte HTL1 Designentwurf" class="project-img">
+
+                <button class="arrow right">&#10095;</button>
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:liam.johnny.wagner@gmail.com">liam.johnny.wagner@gmail.com</a></p>
+        <p>Mobile: 0677-63442223</p>
+        <p>Address: Hovalstraße 36, 4611 Buchkirchen</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/_liam_wagner/" target="_blank">
+                <img src="Bilder/sozial.png" alt="Instagram" class="social-icon" />
+            </a>
+            <a href="tel:067763442223">
+                <img src="Bilder/telefon.png" alt="Telephone" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+
+    <button id="feedbackBtn" class="feedback-btn">Gib mir dein Feedback!</button>
+
+    <!-- Feedback Modal -->
+    <div id="feedbackModal" class="feedback-modal">
+        <div class="feedback-modal-content">
+            <span id="closeBtn" class="close-btn">&times;</span>
+            <h2>Feedback</h2>
+            <p>Teile mir dein Feedback mit, ich freue mich darauf!</p>
+
+            <!-- Formular für das Feedback -->
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit"> ❌ Noch Nicht möglich</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="imageModal">
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div id="modalText"></div>
+        </div>
+        <button id="closeModal">X</button>
+    </div>
+
+    <footer>
+        <p>Follow me on social media for more updates.</p>
+    </footer>
+
+    <script src="Portfolio.js"></script>
+    <script>
+        emailjs.init("24OXMvHnprHl-D1vy"); // Dein Public Key
+    </script>
+
+</body>
+
+</html>
